@@ -151,6 +151,6 @@ public class TicTacToe {
 		while (play ) {
 			TicTacToe.playX(myBoard);
 			TicTacToe.playO(myBoard);	
-	    } 	
+	        } 	
 	 }
 }
