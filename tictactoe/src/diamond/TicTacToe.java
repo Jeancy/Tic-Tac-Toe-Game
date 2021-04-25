@@ -9,15 +9,17 @@ import java.util.Scanner;
 
 //Implementing the tic tac toe game to be played on the console.
 public class TicTacToe {
-	private static int count = 0;
+	// A private method or class can only be accessed from within the class it was created, trying to call a private method or class out side its class will result in 
+	// compilation error
+	private static int count = 0; // You can call this static variavle like this: TicTacToe.count or just count within the same class.
 	private static boolean play = true;
 	private static int  row ;
 	private static int col ;
 	private static Scanner sc = new Scanner(System.in);
 	//The method that prints the board every time a player has played
 	public static void printBoard(String[][] board) {
-		int l = board.length ;
-		for (int i = 0; i < l; i++) {
+		int l = board.length ; // the length property of an array gives it size or the number of element in the array
+		for (int i = 0; i < l; i++) { // post increment i++ means we use the initial value of i then we increment
 			System.out.println("-------------");
 			for (int j = 0; j < l ; j++) {
 				if (board[i][j] == null) {
